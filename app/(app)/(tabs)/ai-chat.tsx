@@ -1,0 +1,11 @@
+import { View, Text } from "react-native";
+import React from "react";
+
+const AIChat = () => {
+  return (
+    <View>
+      <Text>AIChat</Text>
+    </View>
+  );
+};
+export default AIChat;
