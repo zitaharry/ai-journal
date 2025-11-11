@@ -8,6 +8,7 @@
     "dev": "sanity dev",
     "start": "sanity start",
     "build": "sanity build",
+    "typegen": "sanity schema extract && sanity typegen generate",
     "deploy": "sanity deploy",
     "deploy-graphql": "sanity graphql deploy"
   },
@@ -16,6 +17,7 @@
   ],
   "dependencies": {
     "@sanity/vision": "^4.14.2",
+    "expo-image-picker": "^17.0.8",
     "react": "^19.1",
     "react-dom": "^19.1",
     "sanity": "^4.14.2",
