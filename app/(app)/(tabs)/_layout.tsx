@@ -2,6 +2,7 @@ import { HapticTab } from "@/components/haptic-tab";
 import { IconSymbol } from "@/components/ui/icon-symbol";
 import { Colors } from "@/constants/theme";
 import { useColorScheme } from "@/hooks/use-color-scheme";
+import { Book, CircleUser, Heart, House } from "@tamagui/lucide-icons";
 import { Tabs, useRouter } from "expo-router";
 import React from "react";
 import { Pressable, StyleSheet } from "react-native";
@@ -58,9 +59,7 @@ export default function TabLayout() {
         name="index"
         options={{
           title: "Home",
-          tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="house.fill" color={color} />
-          ),
+          tabBarIcon: ({ color }) => <House size={28} />,
         }}
       />
 
@@ -68,9 +67,7 @@ export default function TabLayout() {
         name="entries"
         options={{
           title: "Entries",
-          tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="book.fill" color={color} />
-          ),
+          tabBarIcon: ({ color }) => <Book size={28} />,
         }}
       />
 
@@ -88,9 +85,7 @@ export default function TabLayout() {
         name="ai-chat"
         options={{
           title: "AI Chat",
-          tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="heart.fill" color={color} />
-          ),
+          tabBarIcon: ({ color }) => <Heart size={28} />,
         }}
       />
 
@@ -98,9 +93,7 @@ export default function TabLayout() {
         name="profile"
         options={{
           title: "Profile",
-          tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="person.fill" color={color} />
-          ),
+          tabBarIcon: ({ color }) => <CircleUser size={28} />,
         }}
       />
     </Tabs>
