@@ -2,7 +2,7 @@ import { HapticTab } from "@/components/haptic-tab";
 import { IconSymbol } from "@/components/ui/icon-symbol";
 import { Colors } from "@/constants/theme";
 import { useColorScheme } from "@/hooks/use-color-scheme";
-import { Book, CircleUser, Heart, House } from "@tamagui/lucide-icons";
+import { Book, CircleUser, Heart, House, Plus } from "@tamagui/lucide-icons";
 import { Tabs, useRouter } from "expo-router";
 import React from "react";
 import { Pressable, StyleSheet } from "react-native";
@@ -30,7 +30,7 @@ function PlusButton() {
           styles.plusButtonInner,
         ]}
       >
-        <IconSymbol size={24} name="plus" color="white" />
+        <Plus size={24} />
       </Pressable>
     </Card>
   );

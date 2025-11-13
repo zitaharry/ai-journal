@@ -23,6 +23,7 @@ import {
   XStack,
   YStack,
 } from "tamagui";
+import { PlusCircle } from "@tamagui/lucide-icons";
 
 export default function HomeScreen() {
   const { user, isLoaded } = useUser();
@@ -248,11 +249,7 @@ export default function HomeScreen() {
                 gap="$3"
                 style={{ alignItems: "center", justifyContent: "center" }}
               >
-                <IconSymbol
-                  size={24}
-                  name="plus.circle.fill"
-                  color={AppColors.white}
-                />
+                <PlusCircle size={24} color={AppColors.white} />
                 <Text fontSize="$5" fontWeight="600" color="white">
                   Add New Entry
                 </Text>
